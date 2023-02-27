@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo 1
-        run: echo $SECRET01 | base64
+        run: echo -n $SECRET01 > file01
         env:
           SECRET01: ${{ secrets.SECRET01 }}
       - name: multi line
