@@ -13,7 +13,7 @@ jobs:
       - name: echo 1
         run: echo $SECRET01
         env:
-          SECRET01: ${{ SECRET01 }}
+          SECRET01: ${{ secrets.SECRET01 }}
       - name: multi line
         run: |
           ls -l
