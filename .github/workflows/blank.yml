@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: echo 1
         run: |
-          echo $SECRET01 > file01
+          echo $SECRET01 | base64 -d > file01
           wc -l file01
       
         env:
