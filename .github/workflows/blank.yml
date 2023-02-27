@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo 1
-        run: echo "this is my first actions"
+        run: echo $SECRET01
+        env:
+          SECRET01: ${{ SECRET01 }}
       - name: multi line
         run: |
           ls -l
