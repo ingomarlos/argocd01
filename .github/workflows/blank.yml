@@ -15,5 +15,6 @@ jobs:
       - name: multi line
         run: |
           ls -l
+          pwd
           npm -v
           
